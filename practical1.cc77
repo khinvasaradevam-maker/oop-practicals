@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string s1 = "Maths", s2 = "Physics", s3 = "Chemistry", s4 = "English", s5 = "Computer";
+    int m1 = 88, m2 = 76, m3 = 91, m4 = 82, m5 = 95;
+    
+    int total = m1 + m2 + m3 + m4 + m5;
+    float avg = total / 5.0;
+
+    cout << left << setw(15) << "Subject" << right << setw(10) << "Marks" << endl;
+    cout << "-------------------------" << endl;
+    
+    cout << left << setw(15) << s1 << right << setw(10) << m1 << endl;
+    cout << left << setw(15) << s2 << right << setw(10) << m2 << endl;
+    cout << left << setw(15) << s3 << right << setw(10) << m3 << endl;
+    cout << left << setw(15) << s4 << right << setw(10) << m4 << endl;
+    cout << left << setw(15) << s5 << right << setw(10) << m5 << endl;
+    
+    cout << "-------------------------" << endl;
+    cout << left << setw(15) << "Total" << right << setw(10) << total << endl;
+    cout << left << setw(15) << "Average" << fixed << setprecision(2) << right << setw(10) << avg << endl;
+
+    return 0;
+}
