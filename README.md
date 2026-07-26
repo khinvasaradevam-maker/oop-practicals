@@ -1,0 +1,2 @@
+# oop-practicals
+all practicals
