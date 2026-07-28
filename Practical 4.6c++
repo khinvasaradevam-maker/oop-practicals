@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Account {
+private:
+    string acc;
+    double bal;
+public:
+    void in();
+    void out();
+};
+
+void Account::in() {
+    cin >> acc >> bal;
+}
+
+void Account::out() {
+    cout << bal << endl;
+}
+
+int main() {
+    Account a;
+    a.in();
+    a.out();
+    return 0;
+}
+
