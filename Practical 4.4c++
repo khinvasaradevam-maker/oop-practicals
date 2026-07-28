@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+class Square {
+public:
+    int sq(int n) {
+        return n * n;
+    }
+};
+
+int main() {
+    Square s;
+    cout << s.sq(5) << endl;
+    return 0;
+}
+
+6
