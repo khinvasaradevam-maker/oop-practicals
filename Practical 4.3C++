@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class Rect {
+private:
+    double l, b;
+public:
+    void set(double x, double y);
+    double area();
+};
+
+void Rect::set(double x, double y) {
+    l = x;
+    b = y;
+}
+
+double Rect::area() {
+    return l * b;
+}
+
+int main() {
+    Rect r;
+    r.set(10, 5);
+    cout << r.area() << endl;
+    return 0;
+}
+
+
