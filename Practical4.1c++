@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class Box {
+private:
+    double l, w, h;
+public:
+    void set(double x, double y, double z);
+    double vol();
+};
+
+void Box::set(double x, double y, double z) {
+    l = x;
+    w = y;
+    h = z;
+}
+
+double Box::vol() {
+    return l * w * h;
+}
+
+int main() {
+    Box b;
+    b.set(5, 3, 2);
+    cout << b.vol() << endl;
+    return 0;
+}
+
