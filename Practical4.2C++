@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Student {
+private:
+    string n;
+    int r;
+public:
+    void in();
+    void out();
+};
+
+void Student::in() {
+    cin >> n >> r;
+}
+
+void Student::out() {
+    cout << n << " " << r << endl;
+}
+
+int main() {
+    Student s;
+    s.in();
+    s.out();
+    return 0;
+}
+
