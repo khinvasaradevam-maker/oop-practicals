@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class Demo
+{
+    static int count;
+
+public:
+    Demo()
+    {
+        count++;
+    }
+
+    static void display()
+    {
+        cout << "Number of objects = " << count;
+    }
+};
+
+int Demo::count = 0;
+
+int main()
+{
+    Demo a, b, c;
+
+    Demo::display();
+
+    return 0;
+}
