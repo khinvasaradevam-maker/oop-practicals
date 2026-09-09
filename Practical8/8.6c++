@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+class Student
+{
+    int rollNo;
+
+public:
+    void accept()
+    {
+        cin >> rollNo;
+    }
+
+    void display()
+    {
+        cout << rollNo << endl;
+    }
+};
+
+int main()
+{
+    Student s[5];
+
+    for(int i = 0; i < 5; i++)
+        s[i].accept();
+
+    for(int i = 0; i < 5; i++)
+        s[i].display();
+
+    return 0;
+}
