@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Employee
+{
+    string name;
+    int id;
+    string department;
+
+public:
+    void accept()
+    {
+        cout << "Enter Name, ID and Department: ";
+        cin >> name >> id >> department;
+    }
+
+    void display()
+    {
+        cout << name << "\t" << id << "\t" << department << endl;
+    }
+};
+
+int main()
+{
+    Employee e[5];
+
+    for(int i = 0; i < 5; i++)
+        e[i].accept();
+
+    cout << "\nEmployee Details:\n";
+    for(int i = 0; i < 5; i++)
+        e[i].display();
+
+    return 0;
+}
