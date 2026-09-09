@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class Bank
+{
+    static int accounts;
+
+public:
+    Bank()
+    {
+        accounts++;
+    }
+
+    static void display()
+    {
+        cout << "Total Accounts = " << accounts;
+    }
+};
+
+int Bank::accounts = 0;
+
+int main()
+{
+    Bank a1, a2, a3, a4, a5;
+
+    Bank::display();
+
+    return 0;
+}
