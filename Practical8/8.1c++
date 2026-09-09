@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Book
+{
+    int id;
+    string name;
+    float price;
+
+public:
+    void accept()
+    {
+        cout << "Enter Book ID, Name and Price: ";
+        cin >> id >> name >> price;
+    }
+
+    void display()
+    {
+        cout << id << "\t" << name << "\t" << price << endl;
+    }
+};
+
+int main()
+{
+    Book b[5];
+
+    for(int i = 0; i < 5; i++)
+        b[i].accept();
+
+    cout << "\nBook Records:\n";
+    for(int i = 0; i < 5; i++)
+        b[i].display();
+
+    return 0;
+}
