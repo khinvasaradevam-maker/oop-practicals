@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class Test
+{
+    static int x;
+
+public:
+    void increase()
+    {
+        x++;
+    }
+
+    void display()
+    {
+        cout << "x = " << x << endl;
+    }
+};
+
+int Test::x = 0;
+
+int main()
+{
+    Test a, b;
+
+    a.increase();
+    a.display();
+
+    b.increase();
+    b.display();
+
+    return 0;
+}
