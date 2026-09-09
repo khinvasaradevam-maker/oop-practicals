@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class Average
+{
+    int a, b, c;
+
+public:
+    void getData()
+    {
+        cout << "Enter three numbers: ";
+        cin >> a >> b >> c;
+    }
+
+    friend float average(Average x);
+};
+
+float average(Average x)
+{
+    return (x.a + x.b + x.c) / 3.0;
+}
+
+int main()
+{
+    Average obj;
+
+    obj.getData();
+
+    cout << "Average = " << average(obj);
+
+    return 0;
+}
