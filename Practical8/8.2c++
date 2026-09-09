@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Customer
+{
+    int id;
+    string name;
+    string city;
+
+public:
+    void accept()
+    {
+        cout << "Enter ID, Name and City: ";
+        cin >> id >> name >> city;
+    }
+
+    void display()
+    {
+        cout << id << "\t" << name << "\t" << city << endl;
+    }
+};
+
+int main()
+{
+    Customer c[5];
+
+    for(int i = 0; i < 5; i++)
+        c[i].accept();
+
+    cout << "\nCustomer Details:\n";
+    for(int i = 0; i < 5; i++)
+        c[i].display();
+
+    return 0;
+}
